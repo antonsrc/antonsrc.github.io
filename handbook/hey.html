@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="favicon.svg">
+    <link rel="icon" href="../favicon.svg">
     <title>Hey!</title>
     <style>
         body {background-color:floralwhite;}
@@ -73,6 +73,10 @@
         <li>Четвертый пункт</li>
     </ol>
 
-    <p><img src="dogwatch.jpg" alt="DogWatching"></p>
+    <!-- <p><img src="dogwatch.jpg" alt="DogWatching"></p> -->
+
+    <p>
+        <img srcset="dogwatch.jpg 400w, dogwatch_big.jpg 1000w" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 100vw" src="dogwatch.jpg" alt="DogWatching">
+    </p>
 </body>
 </html>

@@ -2,13 +2,50 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <style>
+    div.maintext {
+        background-color: lightgrey;
+        padding: 20px;
+    }
+
+    @media (min-resolution: 70dpi) {
+        div.maintext {
+            font-size: 1.2em;
+        }
+    }
+
+    @media (min-resolution: 150dpi) {
+        div.maintext {
+            font-size: 2em;
+            background: green;
+        }
+    }
+      
+    @media (min-resolution: 200dpi) {
+        div.maintext {
+            font-size: 2.3em;
+            background: red;
+        }
+    }
+    
+    @media (min-resolution: 300dpi) {
+        div.maintext {
+            font-size: 2.7em;
+            background: blue;
+        }
+    }
+    </style>
     <link rel="icon" href="favicon.svg">
     <title>antonsrc - index page</title>
 </head>
 <body>
-    <p>Здравствуй сетевой странник!<br>
-    Здесь ты найдешь технические записи кодокопателя неравнодушного к Природе и хорошим книжкам.</p>
-    <b>Записи:</b><br>
-    <a href="handbook/hey.html">Hey!</a></p>
+    <div class="maintext">Здравствуй сетевой странник!<br>
+    Здесь ты найдешь технические записи кодокопателя неравнодушного к Природе и хорошим книжкам.
+    </div>
+    <br>
+    <br>
+    <b>Записи:</b>
+    <br>
+    <a href="handbook/hey.html">Hey!</a>
 </body>
 </html>

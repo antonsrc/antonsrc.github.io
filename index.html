@@ -6,38 +6,15 @@
     div.maintext {
         background-color: lightgrey;
         padding: 20px;
-    }
-
-    @media (min-resolution: 70dpi) {
-        div.maintext {
-            font-size: 1.2em;
-        }
-    }
-
-    @media (min-resolution: 150dpi) {
-        div.maintext {
-            font-size: 2em;
-            background: green;
-        }
-    }
-      
-    @media (min-resolution: 200dpi) {
-        div.maintext {
-            font-size: 2.3em;
-            background: red;
-        }
+        font-size: 1.2em;
     }
     
-    @media (min-resolution: 300dpi) {
+
+    
+    @media (max-device-width: 400px) {
         div.maintext {
-            font-size: 2.7em;
-            background: blue;
-        }
-        
-    @media (min-device-width: 300px) {
-        div.maintext {
-            font-size: 2.7em;
-            background: yellow;
+            font-size: 2em;
+            background-color: yellow;
         }
     }
     </style>

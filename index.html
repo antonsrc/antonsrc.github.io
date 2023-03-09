@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <style>
-    div.maintext {
-        background-color: lightgrey;
-        padding: 20px;
-        font-size: 1.2em;
-    }
-    @media (max-device-width: 400px) {
-        div.maintext {
-            font-size: 1.3em;
-            background-color: yellow;
-        }
-    }
-    </style>
-    <link rel="icon" href="favicon.svg">
-    <title>antonsrc - index page</title>
+    <link rel="stylesheet" href="./src/style.css">
+
+    <title>anton src</title>
 </head>
 <body>
-    <div class="maintext">5 Здравствуй сетевой странник!<br>
-    Здесь ты найдешь технические записи кодокопателя неравнодушного к Природе и хорошим книжкам.
+    <span>anton<sup>src (v.1.0)</sup></span>
+
+    <script src="./src/main.js"></script>
+    
+    <div class="maintext">Здравствуй сетевой странник!<br>
+    Здесь ты найдешь технические записи кодокопателя неравнодушного к Природе, музыке и хорошим книжкам.
     </div>
-    <br>
-    <br>
-    <b>Записи:</b>
-    <br>
-    <a href="handbook/hey.html">Hey!</a>
+    <details>
+        <summary>Подробнее</summary>
+        <p>Ну а здесь более подробнее о себе...
+            <br>
+            Меня зовут Антон, я программист. 
+            Я тут поковырял код, поделал всякое дж-дж-дж на гитаре и помышеводствовал в блендере, получилось вроде не плохо, посмотри тут:
+        </p>
+    </details>
+    <p><a href="handbook/hey.html">Трунь</a></p>
+    <p><a href="handbook/hey.html">Трянкъ</a></p>
+    <p><a href="handbook/hey.html">Бам</a></p>
+    <p><a href="handbook/hey.html">Хххщ</a></p>
+
+    <p>2023, anton.source@gmail.com</p>
 </body>
 </html>

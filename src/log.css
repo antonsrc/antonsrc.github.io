@@ -1,0 +1,34 @@
+#header {
+    float: right;
+    background: rgba(144,238,144,0.6);
+    height: 50px;
+    width: 500px;
+    transform: rotate(15deg);
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    padding: 0;
+    border: 0;
+}
+
+#firstTD {
+    width: 15%;
+    background-color: wheat;
+}
+
+#yellowTD {
+    width: 10%;
+    background-color: yellow;
+}
+
+.pinkTD {
+    width: 15%;
+    background-color: pink;
+}
+
+#grayTD {
+    width: 20%;
+    background-color: gray;
+}

@@ -26,7 +26,7 @@ table {
 
 #firstTD {
     width: 15%;
-    background-color: wheat;
+    background-color:aqua;
 }
 
 #yellowTD {
@@ -42,4 +42,48 @@ table {
 #grayTD {
     width: 20%;
     background-color: gray;
+}
+
+#dostoevsky {
+    white-space: pre-wrap;
+    border-radius: 50px;
+    padding: 50px;
+    background-image: linear-gradient(135deg, lightgreen 30%, rgb(196, 111, 230) 80%);
+    cursor: url(../data/arrow.png), crosshair;
+}
+
+#tempFlex{
+    position: relative;
+    height: 400px;
+    width: 250px;
+    border: 1px black solid;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#tempFlex div{
+    color: white;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+#div1{
+    background: red;
+    order: 2;
+}
+
+#div2{
+    background: green;
+    order: 1;
+}
+
+#div3{
+    background: blue;
+    text-align: right;
+    order: 3;
 }

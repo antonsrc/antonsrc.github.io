@@ -1,12 +1,12 @@
 
 
-function changeDisplay() {
-    var dostoevsky = document.getElementById("dostoevsky");
-    if(dostoevsky.style.display == "none") {
-        dostoevsky.style.display = "block";
+function changeDisplay(idName) {
+    var id = document.getElementById(idName);
+    if(id.style.display == "none") {
+        id.style.display = "block";
     }
     else{
-        dostoevsky.style.display = "none";
+        id.style.display = "none";
     }
 }
 
@@ -24,4 +24,6 @@ function changeFirstTD() {
     }
 
 }
+
+
 

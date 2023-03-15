@@ -6,16 +6,31 @@
     transform: rotate(15deg);
     position: absolute;
     top: 50px;
-    right: 50px;
     color:white;
     font-weight: bold;
     font-size: 30pt;
-
     text-align: right;
-
     border-radius: 20px;
     background-image: linear-gradient(135deg, rgb(240, 232, 128) 0%, lightgreen 70%);
+
+    right: -50px;
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+    filter: drop-shadow(1px 1px 5px rgba(50,0,0,0.2));
 }
+
+#header:hover {
+    right: 50px;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+}
+
+#headerPARENT {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
 
 table {
     width: 100%;
@@ -52,6 +67,38 @@ table {
     cursor: url(../data/arrow.png), crosshair;
 }
 
+#tempGrid{
+    display: grid;
+    height: 350px;
+    width: 500px;
+    border: 1px black solid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+    "div10 div20   .   div40 div40"
+    "div10 div30 div30 div40 div40";
+}
+
+#div10{
+    background: blue;
+    grid-area: div10;
+}
+
+#div20{
+    background: rgb(42, 87, 111);
+    grid-area: div20;
+}
+
+#div30{
+    background: rgb(31, 207, 63);
+    grid-area: div30;
+}
+
+#div40{
+    background: rgb(147, 61, 111);
+    grid-area: div40;
+}
+
+
 #tempFlex{
     position: relative;
     height: 400px;
@@ -86,4 +133,8 @@ table {
     background: blue;
     text-align: right;
     order: 3;
+}
+
+body{
+    margin: 0px;
 }

@@ -70,7 +70,6 @@ table {
 #tempGrid{
     display: grid;
     height: 350px;
-    width: 300px;
     border: 1px black solid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:

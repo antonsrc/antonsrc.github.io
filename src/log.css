@@ -136,4 +136,12 @@ table {
 
 body{
     margin: 0px;
+    background: rgb(191, 191, 248);
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background: rgb(63, 236, 181);
+    }
+    
 }

@@ -1,17 +1,8 @@
+changeFirstTD();
 
-
-function changeDisplay(idName) {
-    var id = document.getElementById(idName);
-    if(id.style.display == "none") {
-        id.style.display = "block";
-    }
-    else{
-        id.style.display = "none";
-    }
-}
-
-window.onload = changeFirstTD;
 function changeFirstTD() {
+    console.log("CALL function " + arguments.callee.name);
+
     var fTD = document.getElementById("firstTD");
     if (fTD.style.background == "aqua"){
         fTD.style.background = "red";
@@ -22,8 +13,14 @@ function changeFirstTD() {
         fTD.style.background = "aqua";
         fTD.style.width = (fTD.clientWidth - 200) + "px";
     }
-
 }
+
+function addNewEvent() {
+    console.log("CALL function " + arguments.callee.name);
+    let editPl = document.getElementById("editorPlace");
+    editPl.innerHTML = "дата\nописание";
+}
+
 
 
 

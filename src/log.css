@@ -1,35 +1,81 @@
-#header {
+#mainFlex{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px white solid;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: flex-start;
+    align-content: flex-start; */
+}
+
+#mainFlex div{
+    color: white;
+    /* width: 100%; */
+}
+
+#header{
+    background: rgb(238, 149, 149);
+    order: 1;
+    flex-basis: 100px;
+    position: relative;
+}
+
+#main{
+    background: rgb(163, 214, 163);
+    order: 2;
+    flex-basis: calc(100vh - 100px - 50px - 22px);
+    flex-shrink: 1;
+}
+
+#main p{
+    text-align: center;
+}
+
+#editorPlace{
+    border: 1px white solid;
+}
+
+#footer{
+    background: rgb(161, 161, 211);
+    text-align: center;
+    order: 3;
+    flex-basis: 50px;
+}
+
+
+
+
+
+
+#header2 {
     float: right;
     padding: 10px;
-    height: 70px;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
     width: 200px;
-    transform: rotate(15deg);
+    transform: rotate(10deg);
     position: absolute;
-    top: 50px;
+    top: 20px;
     color:white;
     font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30pt;
-    text-align: right;
+    text-align: center;
+    
     border-radius: 20px;
     background-image: linear-gradient(135deg, rgb(240, 232, 128) 0%, lightgreen 70%);
 
-    right: -50px;
-    transition-duration: 0.5s;
-    transition-delay: 1s;
+    right: 20px;
+
     filter: drop-shadow(1px 1px 5px rgba(50,0,0,0.2));
 }
 
-#header:hover {
-    right: 50px;
-    transition-duration: 0.2s;
-    transition-delay: 0s;
-}
 
-#headerPARENT {
-    overflow: hidden;
-    position: relative;
-    height: 200px;
-}
 
 
 table {
@@ -59,84 +105,15 @@ table {
     background-color: gray;
 }
 
-#dostoevsky {
-    white-space: pre-wrap;
-    border-radius: 50px;
-    padding: 50px;
-    background-image: linear-gradient(135deg, lightgreen 30%, rgb(196, 111, 230) 80%);
-    cursor: url(../data/arrow.png), crosshair;
-}
-
-#tempGrid{
-    display: grid;
-    height: 350px;
-    border: 1px black solid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas:
-    "div10 div20   .   div40 div40"
-    "div10 div30 div30 div40 div40";
-}
-
-#div10{
-    background: blue;
-    grid-area: div10;
-}
-
-#div20{
-    background: rgb(42, 87, 111);
-    grid-area: div20;
-}
-
-#div30{
-    background: rgb(31, 207, 63);
-    grid-area: div30;
-}
-
-#div40{
-    background: rgb(147, 61, 111);
-    grid-area: div40;
-}
 
 
-#tempFlex{
-    position: relative;
-    height: 400px;
-    width: 250px;
-    border: 1px black solid;
+
+@media screen {
+    body{
+        margin: 10px;
+        background: rgb(191, 191, 248);
+    }
     
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
-
-#tempFlex div{
-    color: white;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-}
-
-#div1{
-    background: red;
-    order: 2;
-}
-
-#div2{
-    background: green;
-    order: 1;
-}
-
-#div3{
-    background: blue;
-    text-align: right;
-    order: 3;
-}
-
-body{
-    margin: 0px;
-    background: rgb(191, 191, 248);
 }
 
 @media screen and (max-width: 600px) {

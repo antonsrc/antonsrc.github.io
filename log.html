@@ -10,10 +10,9 @@
     <div id="mainFlex">
         <div id="header">
             <div id="header2"><span>log<sup>v.1.0</sup></span></div>
-            
         </div>
         <div id="main">
-            <a href="#" onclick="changeFirstTD(); return false">Изменить цвет и ширину ячейки</a>
+            <a href="#" onclick="changeFirstTD()">Изменить цвет и ширину ячейки</a>
             <table>
                 <tr>
                     <td width="10%">
@@ -65,9 +64,14 @@
                 </tr>
             </table>
             <p>
-                <a href="#" onclick="addNewEvent(); return false">( + )</a>
+                <a href="#" onclick="addNewEvent()">( + )</a>
             </p>
-            <p id="editorPlace"></p>
+            <div id="editorPlace">
+                <div id="editorMainPlace"></div>
+                <div id="editorOk">
+                    <a href="#" onclick="eventOk()">( Ok )</a>
+                </div>
+            </div>
         </div>
         <div id="footer">2023, anton.source@gmail.com</div>
     </div>

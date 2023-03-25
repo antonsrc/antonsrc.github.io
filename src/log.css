@@ -36,6 +36,8 @@
 
 #editorPlace{
     border: 1px white solid;
+    display: none;
+    text-align: center;
 }
 
 #footer{
@@ -106,19 +108,15 @@ table {
 }
 
 
-
-
 @media screen {
     body{
         margin: 10px;
         background: rgb(191, 191, 248);
-    }
-    
+    } 
 }
 
 @media screen and (max-width: 600px) {
     body{
         background: rgb(63, 236, 181);
     }
-    
 }

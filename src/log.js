@@ -17,10 +17,18 @@ function changeFirstTD() {
 
 function addNewEvent() {
     console.log("CALL function " + arguments.callee.name);
+
     let editPl = document.getElementById("editorPlace");
-    editPl.innerHTML = "дата\nописание";
+    let editMainPl = document.getElementById("editorMainPlace");
+    editPl.style.display = "block";
+    editMainPl.innerHTML = "дата\nописание";
 }
 
+function eventOk() {
+    console.log("CALL function " + arguments.callee.name);
 
+    let editPl = document.getElementById("editorPlace");
+    editPl.style.display = "none";
+}
 
 
